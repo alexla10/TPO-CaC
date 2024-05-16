@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/forms.css">
+    <title>Registrarse</title>
+</head>
+<body>
+    <div class="aliniacion">
+
+        <form action="#" class="formulario" method="GET" onsubmit="return validarFormulario();">
+            <h2>Registrarse </h2>
+            <div class="input-field">
+                <input type="text" id="name" placeholder=" ">
+                <label for="name">Nombre</label>
+            </div>
+            <p id="warning-name"></p>
+            
+            <div class="input-field">
+                <input type="text" id="lastname" placeholder=" ">
+                <label for="lastname">Apellido</label>
+            </div>
+            <p id="warning-lastname"></p>
+
+            <div class="input-field">
+                <input type="email" id="email" placeholder=" ">
+                <label for="email">Email</label>
+            </div>
+            <p id="warning-email"></p>
+
+            <div class="input-field">
+                <input type="password" id="password" placeholder=" " onfocus="Mostrar()">
+                <label for="password">Contraseña</label>
+            </div>
+            <p id="warning-password"></p>
+            
+            <div class="requisitos">
+                <ul>
+                    <li id="longitud" class="">Minimo 8 caracteres. <i id="icon-1" ></i></li>
+                    <li id="mayus" class="">Una mayuscula. <i id="icon-2"></i></li>
+                    <li id="numero" class="">Un numero. <i id="icon-3"></i></li>
+                    <li id="especial" class="">Un caracter especial (!,",#,$,@,&). <i id="icon-4"></i></li>
+                </ul>
+            </div>
+            <p id="warning-password-cond"></p>
+
+            <div class="input-field">
+                <select name="Country" id="Country">
+                    <option value="1">Argentina</option>
+                    <option value="2">Chile</option>
+                    <option value="3">Uruguay</option>
+                    <option value="4">Brasil</option>
+                    <option value="5">Paraguay</option>
+                    <option value="6">Peru</option>
+                    <option value="7">Ecuador</option>
+                    <option value="8">Colombia</option>
+                    <option value="9">Venezuela</option>
+                    <option value="10">Bolivia</option>
+                </select>
+                <label for="Country">Seleccione un Pais</label>
+            </div>
+
+            <div class="terminos">
+                <input type="checkbox" name="terminos-check" id="terminos-check" onchange="habilitarSubmit()">
+                <label for="terminos-check" style="color:white">Acepto los terminos y condiciones</label>
+            </div>
+
+            <div class="aliniacion">
+                <input type="submit" value="Enviar" id="enviar" class="btn" disabled>
+            </div>
+            
+            
+        </form>
+    </div>
+    
+
+    <script src="../JS/register.js"></script>
+    <script src="https://kit.fontawesome.com/c16fd156c6.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/forms.css">
+    <title>Inicio Sesion</title>
+</head>
+<body>
+    <div class="login">
+        <form action="#" method="GET" id="form" class="formulario" onsubmit="return IniciarSesion()">
+            <h2>Iniciar Sesion</h2>
+            <div class="input-field">
+                <input type="email" id="email" placeholder=" ">
+                <label for="email">Email</label>
+            </div>
+            <p id="warning-email"></p>
+
+            <div class="input-field">
+                <input type="password" id="password" placeholder=" ">
+                <label for="password">Contraseña</label>
+            </div>
+            <p id="warning-password"></p>
+
+            <p class="newAccount">No tienes cuenta aun, <a href="Register.html">Registrate aqui</a></p>
+
+            <div class="aliniacion">
+                <input type="submit" value="Iniciar sesion" id="enviar" class="btn">
+            </div>
+            
+        </form>
+    </div>
+    <script src="../JS/login.js"></script>
+</body>
+</html>

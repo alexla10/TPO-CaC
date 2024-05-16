@@ -1,0 +1,200 @@
+:root{
+    --color-text: #fff;
+    --color-borber: #fff;
+    --color-focus: #33a4a5;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-moneda-oro-bitcoin-criptomoneda_1017-31505.jpg?size=626&ext=jpg&ga=GA1.1.44546679.1715644800&semt=sph);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.aliniacion{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+input{
+    margin: 4px 0;
+}
+
+.input-field{
+    position: relative;
+    margin: 15px auto;
+    padding: 0 10px;
+}
+
+.formulario{
+    background-color: black;
+    padding: 20px 0;
+    border-radius: 22px;
+}
+label{
+    padding: 0 10px;
+}
+
+.input-field input, select {
+    width: 320px;
+    height: 60px;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0 10px;
+    border: 2px solid var(--color-borber);
+    color: var(--color-text);
+    outline: none;
+    background: transparent;
+}
+
+select{
+    width: 100%;
+}
+
+select option{
+    background-color: #060b23;
+}
+
+input:focus, select:focus{
+    border: 2px solid var(--color-focus);
+}
+
+.input-field label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    pointer-events: none;
+    color: var(--color-text);
+    transition: .3s;
+}
+
+input:focus + label, input:not(:placeholder-shown) + label,
+select:focus + label, select:not(:placeholder-shown) + label{
+    top: 4%;
+    left: 15px;
+    font-size: 16px;
+    padding: 0 5px;
+    background-color: #060b23;
+}
+
+input:focus + label{
+    color: var(--color-focus);
+}
+
+.terminos{
+    color: var(--color-text);
+    margin: 15px;
+}
+
+.terminos label{
+    margin: 0;
+}
+
+.btn:hover{
+    background-color: #0a58ca;
+}
+
+.btn, .btn[disabled] {
+    width: 93%;
+    margin: 15px auto;
+    padding: 15px;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #0d6efd;
+    color: var(--color-text);
+    font-weight: bold;
+}
+
+.btn:disabled{
+    cursor: inherit;
+    background-color: gray;
+}
+
+.requisitos{
+    color: var(--color-text);
+    margin-bottom: 40px;
+    display: none;
+}
+
+.requisitos ul{
+    padding: 0 0 0 25px;
+}
+
+.requisitos ul li{
+    list-style: none;
+}
+
+.invalido, p{
+    color: red;
+}
+
+.valido{
+    color: rgb(32, 253, 54);
+}
+
+.campo-invalido{
+    border: 2px solid red !important;
+}
+
+input.campo-invalido:focus + label{
+    color: white;
+}
+
+p{
+    word-wrap: break-word;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+@media (max-width: 390px){
+    .formulario{
+        width: 100%;
+    }
+
+    .input-field input, select{
+        width:  100%;
+        padding: 0;
+    }
+
+    select{
+        width: 100%;
+    }
+}
+
+/* Login */
+
+body .login{
+    height: 100vh;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.login h2, h2{
+    text-align: center;
+    color: var(--color-text);
+}
+
+.newAccount{
+    margin-bottom: 10px;
+    color: var(--color-text);
+}
+
+.newAccount a{
+    color: aqua;
+}
