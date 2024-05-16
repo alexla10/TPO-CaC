@@ -26,7 +26,7 @@ let condEsp = false
 
 function validarPassword(e) {
     
-    if (e.target.value.length.trim() < 8) {
+    if (e.target.value.trim().length < 8) {
         longitud.setAttribute("class","invalido")
         icon1.setAttribute("class", "fa-solid fa-circle-xmark invalido")
         condLongitud = false
