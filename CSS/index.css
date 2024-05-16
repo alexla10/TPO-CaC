@@ -147,6 +147,11 @@ main{
     background-color: #005bff;
 }
 
+iframe{
+    width: 560px;
+    height: 315px;
+}
+
 footer{
     background-color: #244452;
     display: flex;
@@ -227,7 +232,7 @@ hr{
     margin-top: 100px;
 }
 
-span{
+#whatsspp{
     background-color: #32bb46;
     height: 60px;
     width: 60px;
@@ -241,7 +246,7 @@ span{
     bottom: 6%;
 }
 
-span a i{
+#whatsspp a i{
     color: white;
     font-size: 40px; 
 }
@@ -314,7 +319,7 @@ span a i{
         margin-top: 66.8px;
     }
 
-    span{
+    #whatsspp{
         height: 35px;
         width: 35px;
         right: 1%;
