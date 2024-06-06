@@ -10,17 +10,10 @@
 }
 
 body{
-    background-image: url(https://img.freepik.com/vector-gratis/fondo-moneda-oro-bitcoin-criptomoneda_1017-31505.jpg?size=626&ext=jpg&ga=GA1.1.44546679.1715644800&semt=sph);
+    background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/infobae/LRLDRIXUSREKTGBRVWHVC6SIGA.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-}
-
-.aliniacion{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
 }
 
 input{
@@ -37,7 +30,9 @@ input{
     background-color: black;
     padding: 20px 0;
     border-radius: 22px;
+    margin: auto;
 }
+
 label{
     padding: 0 10px;
 }
